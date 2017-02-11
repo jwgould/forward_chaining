@@ -61,7 +61,7 @@ def forward_chain(agenda, knowledge, inferred):
         # Search the KB for each agenda item, change predicates to True
         for rule in knowledge:
             for j, premise in enumerate(rule[0]):
-                if premise == item:             # if the proposiion is found
+                if premise == item:             # if the proposition is found
                     rule[0][j] = True
             # Check if entire hypothesis true (then conclusion becomes true)
             if check_hypothesis(rule[0]):
