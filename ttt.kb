@@ -1,0 +1,321 @@
+# ----------------------
+# Tic-Tac-Toe         --
+# Knowledge base      --
+# ----------------------
+# o Rows ---------------
+# ----------------------
+# Row 1 : o
+o11 o12 b13 o13_can_win
+o11 b12 o13 o12_can_win
+b11 o12 o13 o11_can_win
+
+# Row 2 : o
+o21 o22 b23 o23_can_win
+o21 b22 o23 o22_can_win
+b21 o22 o23 o21_can_win
+
+# Row 3 : o
+o31 o32 b33 o33_can_win
+o31 b32 o33 o32_can_win
+b31 o32 o33 o31_can_win
+
+# ----------------------
+# o Columns ------------
+# ----------------------
+# Column 1 : o
+o11 o21 b31 o31_can_win
+o11 b21 o31 o21_can_win
+b11 o21 o31 o11_can_win
+
+# Column 2 : o
+o12 o22 b32 o32_can_win
+o12 b22 o32 o22_can_win
+b12 o22 o32 o12_can_win
+
+# Column 3 : o
+o13 o23 b33 o33_can_win
+o13 b23 o33 o23_can_win
+b13 o23 o33 o13_can_win
+
+# ----------------------
+# o Diagonals ----------
+# ----------------------
+# \
+o11 o22 b33 o33_can_win
+o11 b22 o33 o22_can_win
+b11 o22 o33 o11_can_win
+
+# /
+o13 o22 b32 o32_can_win
+o13 b22 o31 o22_can_win
+b13 o22 o31 o13_can_win
+
+# ----------------------
+# x Rows ---------------
+# ----------------------
+# Row 1 : x
+x11 x12 b13 x13_can_win
+x11 b12 x13 x12_can_win
+b11 x12 x13 x11_can_win
+
+# Row 2 : x
+x21 x22 b23 x23_can_win
+x21 b22 x23 x22_can_win
+b21 x22 x23 x21_can_win
+
+# Row 3 : x
+x31 x32 b33 x33_can_win
+x31 b32 x33 x32_can_win
+b31 x32 x33 x31_can_win
+
+# ----------------------
+# x Columns ------------
+# ----------------------
+# Column 1 : x
+x11 x21 b31 x31_can_win
+x11 b21 x31 x21_can_win
+b11 x21 x31 x11_can_win
+
+# Column 2 : x
+x12 x22 b32 x32_can_win
+x12 b22 x32 x22_can_win
+b12 x22 x32 x12_can_win
+
+# Column 3 : x
+x13 x23 b33 x33_can_win
+x13 b23 x33 x23_can_win
+b13 x23 x33 x13_can_win
+
+# ----------------------
+# x Diagonals ----------
+# ----------------------
+# \
+x11 x22 b33 x33_can_win
+x11 b22 x33 x22_can_win
+b11 x22 x33 x11_can_win
+
+# /
+x13 x22 b32 x32_can_win
+x13 b22 x31 x22_can_win
+b13 x22 x31 x13_can_win
+
+# --------------------------------
+# FORCED MOVES -------------------
+# --------------------------------
+# Force : x
+o11_can_win turn_x move_x11_forced
+o12_can_win turn_x move_x12_forced
+o13_can_win turn_x move_x13_forced
+
+o21_can_win turn_x move_x21_forced
+o22_can_win turn_x move_x22_forced
+o23_can_win turn_x move_x23_forced
+
+o31_can_win turn_x move_x31_forced
+o32_can_win turn_x move_x32_forced
+o33_can_win turn_x move_x33_forced
+
+# Force : o
+x11_can_win turn_o move_o11_forced
+x12_can_win turn_o move_o12_forced
+x13_can_win turn_o move_o13_forced
+
+x21_can_win turn_o move_o21_forced
+x22_can_win turn_o move_o22_forced
+x23_can_win turn_o move_o23_forced
+
+x31_can_win turn_o move_o31_forced
+x32_can_win turn_o move_o32_forced
+x33_can_win turn_o move_o33_forced
+
+# --------------------------
+# o CAN WIN ----------------
+# --------------------------
+o13_can_win turn_o o_can_win
+o11_can_win turn_o o_can_win
+o12_can_win turn_o o_can_win
+o21_can_win turn_o o_can_win
+o22_can_win turn_o o_can_win
+o23_can_win turn_o o_can_win
+o31_can_win turn_o o_can_win
+o32_can_win turn_o o_can_win
+o33_can_win turn_o o_can_win
+
+
+
+# --------------------------
+# x CAN WIN ----------------
+# --------------------------
+x11_can_win turn_x x_can_win
+x12_can_win turn_x x_can_win
+x13_can_win turn_x x_can_win
+x21_can_win turn_x x_can_win
+x22_can_win turn_x x_can_win
+x23_can_win turn_x x_can_win
+x31_can_win turn_x x_can_win
+x32_can_win turn_x x_can_win
+x33_can_win turn_x x_can_win
+
+# ------------------------------------
+# ----      o move CAN WIN        ----
+# ------------------------------------
+o11_can_win o_can_win move_o11_can_win
+o12_can_win o_can_win move_o12_can_win
+o13_can_win o_can_win move_o13_can_win
+o21_can_win o_can_win move_o21_can_win
+o22_can_win o_can_win move_o22_can_win
+o23_can_win o_can_win move_o23_can_win
+o31_can_win o_can_win move_o31_can_win
+o32_can_win o_can_win move_o32_can_win
+o33_can_win o_can_win move_o33_can_win
+
+# ------------------------------------
+# ----      x move CAN WIN        ----
+# ------------------------------------
+x11_can_win x_can_win move_x11_can_win
+x12_can_win x_can_win move_x12_can_win
+x13_can_win x_can_win move_x13_can_win
+x21_can_win x_can_win move_x21_can_win
+x22_can_win x_can_win move_x22_can_win
+x23_can_win x_can_win move_x23_can_win
+x31_can_win x_can_win move_x31_can_win
+x32_can_win x_can_win move_x32_can_win
+x33_can_win x_can_win move_x33_can_win
+
+# ------------------------------------
+# ----    No Win Rows - Singles   ----
+# ------------------------------------
+# Turn o
+b11 b12 b13 b11_setup
+b21 b22 b23 b21_setup
+b31 b32 b33 b31_setup
+
+b11 b12 o13 b11_setup
+b21 b22 o23 b21_setup
+b31 b32 o33 b31_setup
+
+b11 o12 b13 b13_setup
+b21 o22 b23 b23_setup
+b31 o32 b33 b33_setup
+
+o11 b12 b13 b13_setup
+o21 b22 b23 b23_setup
+o31 b32 b33 b33_setup
+
+b11 b12 x13 b11_setup
+b21 b22 x23 b21_setup
+b31 b32 x33 b31_setup
+
+b11 x12 b13 b11_setup
+b21 x22 b23 b21_setup
+b31 x32 b33 b31_setup
+
+x11 b12 b13 b13_setup
+x21 b22 b23 b23_setup
+x31 b32 b33 b33_setup
+
+# ------------------------------------
+# ----     No Win Rows - x,o      ----
+# ------------------------------------
+b11 o12 x13 b11_setup
+b21 o22 x23 b21_setup
+b31 o32 x33 b31_setup
+
+b11 x12 o13 b11_setup
+b21 x22 o23 b21_setup
+b31 x32 o33 b31_setup
+
+x11 b12 o13 b12_setup
+x21 b22 o23 b22_setup
+x31 b32 o33 b32_setup
+
+x11 o12 b13 b13_setup
+x21 o22 b23 b23_setup
+x31 o32 b33 b33_setup
+
+o11 x12 b13 b13_setup
+o21 x22 b23 b22_setup
+o31 x32 b33 b33_setup
+
+o11 b12 x13 b12_setup
+o21 b22 x23 b22_setup
+o31 b32 x33 b32_setup
+
+# ------------------------------------
+# ----  No Win Columns - Singles  ----
+# ------------------------------------
+b11 b21 b31 b11_setup
+b12 b22 b32 b12_setup
+b13 b23 b33 b13_setup
+
+b11 b21 o31 b11_setup
+b12 b22 o32 b12_setup
+b13 b23 o33 b13_setup
+
+b11 o21 b31 b11_setup
+b12 o22 b32 b12_setup
+b13 o23 b33 b13_setup
+
+o11 b21 b31 b31_setup
+o12 b22 b32 b32_setup
+o13 b23 b33 b33_setup
+
+b11 b21 x31 b11_setup
+b12 b22 x32 b12_setup
+b13 b23 x33 b13_setup
+
+b11 x21 b31 b11_setup
+b12 x22 b32 b12_setup
+b13 x23 b33 b13_setup
+
+x11 b21 b31 b31_setup
+x12 b22 b32 b32_setup
+x13 b23 b33 b33_setup
+
+# ------------------------------------
+# ----     No Win Columns x,o     ----
+# ------------------------------------
+b11 o21 x31 b11_setup
+b12 o22 x32 b12_setup
+b13 o23 x33 b13_setup
+
+b11 x21 o31 b11_setup
+b12 x22 o32 b12_setup
+b13 x23 o33 b13_setup
+
+x11 b21 o31 b21_setup
+x12 b22 o32 b22_setup
+x13 b23 o33 b23_setup
+
+x11 o21 b31 b31_setup
+x12 o22 b32 b32_setup
+x13 o23 b33 b33_setup
+
+o11 x21 b31 b31_setup
+o12 x22 b32 b32_setup
+o13 x23 b33 b33_setup
+
+o11 b21 x31 b21_setup
+o12 b22 x32 b22_setup
+o13 b23 x33 b33_setup
+
+# Condition for base setup states
+b11_setup turn_o move_o11_setup
+b12_setup turn_o move_o12_setup
+b13_setup turn_o move_o13_setup
+b21_setup turn_o move_o21_setup
+b22_setup turn_o move_o22_setup
+b23_setup turn_o move_o23_setup
+b31_setup turn_o move_o31_setup
+b32_setup turn_o move_o32_setup
+b33_setup turn_o move_o33_setup
+
+b11_setup turn_x move_x11_setup
+b12_setup turn_x move_x12_setup
+b13_setup turn_x move_x13_setup
+b21_setup turn_x move_x21_setup
+b22_setup turn_x move_x22_setup
+b23_setup turn_x move_x23_setup
+b31_setup turn_x move_x31_setup
+b32_setup turn_x move_x32_setup
+b33_setup turn_x move_x33_setup

@@ -1,0 +1,18 @@
+Board State: x11 o12 x13 b21 b22 b23 b31 b32 o33 turn_x
+...
+move_x21_setup
+
+calling relationships:
+
+*** /home/jwg/anaconda2/lib/python2.7/trace.py ***
+    trace.Trace.runctx -> trace._unsettrace
+  --> fc.py
+    trace.Trace.runctx -> fc.<module>
+
+*** fc.py ***
+    fc.<module> -> fc.main
+    fc.forward_chain -> fc.check_hypothesis
+    fc.main -> fc.forward_chain
+    fc.main -> fc.parse_kb_file
+    fc.main -> fc.print_suggested_move
+    fc.parse_kb_file -> fc.split_and_build_literals
