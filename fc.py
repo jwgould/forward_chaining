@@ -3,7 +3,6 @@ fc.py is a tic-tac-toe solver which uses a txt file
 knowledge-base and forward chaining to suggest moves
 """
 # Jason Gould
-# CSCE 420 - AI
 # File Created: November 16, 2016
 # File Edited:  November 20, 2016
 # -----------------------------------
